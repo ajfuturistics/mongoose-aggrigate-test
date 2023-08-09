@@ -40,6 +40,10 @@ You have to make only 2 API with POST METHOD
 
 ## Screenshots
 
+### Reports
+
 ![Reports](screenshots/screenshot1.png)
+
+### Add Marks
 
 ![Add Marks](screenshots/screenshot2.png)
