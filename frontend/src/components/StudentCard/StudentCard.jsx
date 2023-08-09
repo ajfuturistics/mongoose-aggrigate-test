@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
 
-const StudentCard = ({ rank, fullname, numOfSubjects, total, avg }) => {
-  const calcPercentage = () => {
-    let val = 0;
-    if (numOfSubjects !== 0) {
-      val = total / (100 * numOfSubjects);
-    }
-    return val * 100;
-  };
+const StudentCard = ({
+  rank,
+  fullname,
+  numOfSubjects,
+  total,
+  avg,
+  percentage,
+}) => {
   return (
     <div className="p-4 shadow-xl rounded">
       <p className="font-semibold my-3">
@@ -36,7 +36,7 @@ const StudentCard = ({ rank, fullname, numOfSubjects, total, avg }) => {
       </p>
       <p className="grid grid-cols-2 gap-4">
         <span className="font-semibold mr-2">Total Percentage:</span>{" "}
-        <span>{calcPercentage()}%</span>
+        <span>{percentage}%</span>
       </p>
     </div>
   );
