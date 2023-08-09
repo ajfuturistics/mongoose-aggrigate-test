@@ -1,6 +1,6 @@
 # About
 
--Tech Stack: React, Vite, Tailwind CSS, NodeJs, Express,mongodb
+- Tech Stack: React, Vite, Tailwind CSS, NodeJs, Express,mongodb
 
 - Collection name: student_mst (direct entry in database when project
   start)
