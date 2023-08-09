@@ -50,4 +50,5 @@ StudentCard.propTypes = {
   numOfSubjects: PropTypes.number.isRequired,
   total: PropTypes.number.isRequired,
   avg: PropTypes.number.isRequired,
+  percentage: PropTypes.number.isRequired,
 };
