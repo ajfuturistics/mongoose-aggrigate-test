@@ -38,6 +38,24 @@ You have to make only 2 API with POST METHOD
 
     - If i request with blank parameter than send all student details in response.
 
+## Steps to run
+
+** NOTE: I have added local database url in /backend/.env Update that based on needs **
+
+```bash
+
+git clone https://github.com/ajfuturistics/prabhi-studio-task.git
+
+cd backend && npm install
+
+cd frontend && npm install
+
+cd backend && npm run dev
+
+cd frontend && npm run dev
+
+```
+
 ## Screenshots
 
 ### Reports
