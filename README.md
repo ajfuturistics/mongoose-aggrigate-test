@@ -40,7 +40,8 @@ You have to make only 2 API with POST METHOD
 
 ## Steps to run
 
-** NOTE: I have added local database url in /backend/.env Update that based on needs **
+> [!NOTE]
+> I have added local database url in /backend/.env Update that based on needs
 
 ```bash
 
