@@ -1,8 +1,39 @@
-# React + Vite
+# About
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+-Tech Stack: React, Vite, Tailwind CSS, NodeJs, Express,mongodb
 
-Currently, two official plugins are available:
+- Collection name: student_mst (direct entry in database when project
+  start)
+  First Name, Last Name, Mobile, Email
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Collection name: Subject_mst (direct entry in database when project
+  start)
+  Subject Name, Status(active, inactive)
+
+- Collection name: Marks_mst (need to add from front)
+  studentId, SubjectId, Marks
+
+You have to make only 2 API with POST METHOD
+
+1.  Add Marks
+
+    - Parameters:
+      studentId: (id from student collection,required)
+      subjectId: (id from subject collection,required, Only status = active)
+      marks: (insert only number,required, max 100)
+
+2.  Report
+
+    - Columns Name:Full Name, Total Subject, Total Marks, Average, Rank.
+    - Parameters Search:
+      studentName: (Optional, Can serach with first name or last name or full
+      name)
+      SubjectId: (Optional, id from subject collection)
+      AverageStart: (Optional, insert only number,min 0, max 100)
+      AverageEnd: (Optional, insert only number,min 0, max 100)
+
+    Output:
+
+    - All Parameters are Optional, if i send any of the parametor then response should come with filtered student data.
+
+    - If i request with blank parameter than send all student details in response.
